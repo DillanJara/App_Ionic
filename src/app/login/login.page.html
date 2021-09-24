@@ -1,0 +1,55 @@
+<ion-header class="borde-contenedor">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div>
+    <ion-card class="borde-contenedor" color="light">
+      <ion-slide>
+        <ion-row>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://banner2.cleanpng.com/20180401/dbq/kisspng-user-profile-computer-icons-profile-5ac09245049c32.0935523415225697970189.jpg">
+            </ion-avatar>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+
+      <ion-card-header>
+        <ion-card-title>Iniciar Sesion</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form>
+          <ion-item class="altura-item">
+            <ion-label position="floating">Usuario</ion-label>
+            <ion-input type="text" required="true"></ion-input>
+          </ion-item>
+          <br>
+
+          <ion-item class="altura-item">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" required="true"></ion-input>
+          </ion-item>
+  
+          <ion-item color="light">
+            <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+            <ion-label class="ion-text-wrap">Desea Mantener Sesion Iniciada</ion-label>
+          </ion-item>
+
+          <ion-button button-type="button" href="/principal" color="primary" expand="block">Iniciar Sesion</ion-button>
+
+          <ion-slide>
+            <ion-item color="light">
+              <a href="#" color="secondary">¿Olvidaste tu contraseña?</a>
+            </ion-item>
+          </ion-slide> 
+        </form>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
