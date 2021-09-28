@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'principal',
     loadChildren: () => import('./principal/principal.module').then( m => m.PrincipalPageModule)
   },
+  {
+    path: 'recuperar-contra',
+    loadChildren: () => import('./recuperar-contra/recuperar-contra.module').then( m => m.RecuperarContraPageModule)
+  },
+  {
+    path: 'codigo-verificar',
+    loadChildren: () => import('./codigo-verificar/codigo-verificar.module').then( m => m.CodigoVerificarPageModule)
+  },
 ];
 
 @NgModule({

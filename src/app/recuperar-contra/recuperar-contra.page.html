@@ -1,0 +1,45 @@
+<ion-header class="borde-contenedor">
+  <ion-toolbar color="dark">
+    <ion-title>Recuperar Contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" color="dark">
+  <div>
+    <ion-card class="borde-contenedor fondo">
+
+      <ion-grid>
+        <ion-row class="ion-justify-content-end">
+          <ion-col size="3">
+            <div>
+              <ion-fab-button href="/home" size="small" color="dark"><ion-icon name="log-in-outline"></ion-icon></ion-fab-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-slide>
+        <ion-row>
+          <ion-col>
+            <ion-avatar>
+              <img src="https://cdn-icons-png.flaticon.com/512/3427/3427189.png">
+            </ion-avatar>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+
+      <ion-card-content>
+        <form>
+          <ion-item class="altura-item borde-input" color="dark">
+            <ion-label position="floating">Ingrese Correo</ion-label>
+            <ion-input type="email" required="true"></ion-input>
+          </ion-item>
+          
+          <ion-button button-type="button" href="/codigo-verificar" color="primary" expand="block">Recuperar</ion-button>
+        </form>
+
+      </ion-card-content>
+
+    </ion-card>
+  </div>
+</ion-content> 

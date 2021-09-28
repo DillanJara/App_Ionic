@@ -1,12 +1,13 @@
 <ion-header class="borde-contenedor">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen="true">
+<ion-content fullscreen="true" color="dark">
   <div>
-    <ion-card class="borde-contenedor" color="light">
+    <ion-card class="borde-contenedor fondo">
+
       <ion-slide>
         <ion-row>
           <ion-col>
@@ -18,32 +19,32 @@
       </ion-slide>
 
       <ion-card-header>
-        <ion-card-title>Iniciar Sesion</ion-card-title>
+        <ion-card-title color="light">Iniciar Sesion</ion-card-title>
       </ion-card-header>
 
       <ion-card-content>
         <form>
-          <ion-item class="altura-item">
+          <ion-item class="altura-item borde-input" color="dark">
             <ion-label position="floating">Usuario</ion-label>
             <ion-input type="text" required="true"></ion-input>
           </ion-item>
           <br>
 
-          <ion-item class="altura-item">
+          <ion-item class="altura-item borde-input" color="dark">
             <ion-label position="floating">Contraseña</ion-label>
             <ion-input type="password" required="true"></ion-input>
           </ion-item>
-  
-          <ion-item color="light">
+
+          <ion-item class="fondo" >
             <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
-            <ion-label class="ion-text-wrap">Desea Mantener Sesion Iniciada</ion-label>
+            <ion-label class="ion-text-wrap" color="light">Desea Mantener Sesion Iniciada</ion-label>
           </ion-item>
 
-          <ion-button button-type="button" href="/principal" color="primary" expand="block">Iniciar Sesion</ion-button>
+          <ion-button button-type="button" onclick="MuestraMensajeCarga();" color="primary" expand="block">Iniciar Sesion</ion-button>
 
           <ion-slide>
-            <ion-item color="light">
-              <a href="#" color="secondary">¿Olvidaste tu contraseña?</a>
+            <ion-item class="fondo">
+              <a href="/recuperar-contra" color="secondary">¿Olvidaste tu contraseña?</a>
             </ion-item>
           </ion-slide> 
         </form>

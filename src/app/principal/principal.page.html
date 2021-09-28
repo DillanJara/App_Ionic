@@ -1,25 +1,25 @@
 <ion-header class="borde-contenedor">
-  <ion-toolbar>
-    <ion-title>Principal</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title>RegistrAPP</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="dark">
   <ion-header collapse="condense">
-    <ion-toolbar>
+    <ion-toolbar color="dark">
       <ion-title>Principal</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div class="container">
-    <ion-card class="borde-contenedor" color="light">
+    <ion-card class="borde-contenedor fondo">
       <ion-card-content>
 
         <ion-grid>
           <ion-row class="ion-justify-content-end">
             <ion-col size="2">
               <div>
-                <ion-fab-button href="/home" size="small" color="medium"><ion-icon name="log-in-outline"></ion-icon></ion-fab-button>
+                <ion-fab-button href="/home" size="small" color="dark"><ion-icon name="log-out-outline"></ion-icon></ion-fab-button>
               </div>
             </ion-col>
           </ion-row>
@@ -29,24 +29,25 @@
           <ion-grid>
             <ion-row>
               <ion-col>
-                <img src="https://image.flaticon.com/icons/png/128/3419/3419271.png" alt="icono">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/640px-Logo_DuocUC.svg.png" alt="icono">
               </ion-col>
             </ion-row>
 
             <ion-row>
               <ion-col>
-                <h1>Bienvenido <br> Alumno</h1>
+                <h1>Bienvenido <wbr> Alumno</h1>
               </ion-col>
             </ion-row>
 
             <ion-row>
               <ion-col>
-                <ion-button href="/login" fill="clear"><ion-icon name="camera-outline"></ion-icon>Escanear QR</ion-button>
+                <ion-button href="#" fill="clear" disabled="true"><ion-icon name="camera-outline"></ion-icon>Escanear QR</ion-button>
               </ion-col>
             </ion-row>
+
             <ion-row>
               <ion-col>
-                <img src="https://cdn-icons-png.flaticon.com/64/1235/1235330.png" alt="QR" >
+                <a href="#" aria-disabled="true"><img src="https://cdn-icons-png.flaticon.com/64/1235/1235330.png" alt="QR" ></a>
               </ion-col>
             </ion-row>
           </ion-grid>
