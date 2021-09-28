@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content fullscreen="true" color="dark">
-  <div>
+
     <ion-card class="borde-contenedor fondo">
       <ion-slide>
         <ion-row>
@@ -16,6 +16,7 @@
           </ion-col>
         </ion-row>
       </ion-slide>
+
       <ion-card-content>
         <form>
           <ion-item class="altura-item borde-input" color="dark">
@@ -26,6 +27,28 @@
           <ion-button button-type="button" href="/login" color="primary" expand="block">Confirmar</ion-button>
         </form>
       </ion-card-content>
+
     </ion-card>
-  </div>
 </ion-content> 
+
+<ion-footer class="borde-contenedor">
+  <ion-toolbar color="dark">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login" text="" icon="log-out-outline"></ion-back-button>
+    </ion-buttons>
+
+    <ion-slide>
+      <ion-title>
+        RegistrAPP
+      </ion-title>
+    </ion-slide>
+
+    <ion-buttons slot="end">
+      <ion-button id="changeText">
+        <ion-icon slot="start" name="refresh"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>

@@ -8,16 +8,6 @@
   <div>
     <ion-card class="borde-contenedor fondo">
 
-      <ion-grid>
-        <ion-row class="ion-justify-content-end">
-          <ion-col size="3">
-            <div>
-              <ion-fab-button href="/home" size="small" color="dark"><ion-icon name="log-in-outline"></ion-icon></ion-fab-button>
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
       <ion-slide>
         <ion-row>
           <ion-col>
@@ -31,10 +21,10 @@
       <ion-card-content>
         <form>
           <ion-item class="altura-item borde-input" color="dark">
-            <ion-label position="floating">Ingrese Correo</ion-label>
+            <ion-label position="floating">Ingrese Correo de Verificacion</ion-label>
             <ion-input type="email" required="true"></ion-input>
           </ion-item>
-          
+          <br>
           <ion-button button-type="button" href="/codigo-verificar" color="primary" expand="block">Recuperar</ion-button>
         </form>
 
@@ -43,3 +33,25 @@
     </ion-card>
   </div>
 </ion-content> 
+
+<ion-footer class="borde-contenedor">
+  <ion-toolbar color="dark">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login" text="" icon="log-out-outline"></ion-back-button>
+    </ion-buttons>
+
+    <ion-slide>
+      <ion-title>
+        RegistrAPP
+      </ion-title>
+    </ion-slide>
+
+    <ion-buttons slot="end">
+      <ion-button id="changeText">
+        <ion-icon slot="start" name="refresh"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>

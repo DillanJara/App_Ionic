@@ -15,16 +15,6 @@
     <ion-card class="borde-contenedor fondo">
       <ion-card-content>
 
-        <ion-grid>
-          <ion-row class="ion-justify-content-end">
-            <ion-col size="2">
-              <div>
-                <ion-fab-button href="/home" size="small" color="dark"><ion-icon name="log-out-outline"></ion-icon></ion-fab-button>
-              </div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-
         <ion-slide>
           <ion-grid>
             <ion-row>
@@ -57,3 +47,25 @@
     </ion-card>
   </div>
 </ion-content>
+
+<ion-footer class="borde-contenedor">
+  <ion-toolbar color="dark">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login" text="" icon="log-out-outline"></ion-back-button>
+    </ion-buttons>
+
+    <ion-slide>
+      <ion-title>
+        RegistrAPP
+      </ion-title>
+    </ion-slide>
+
+    <ion-buttons slot="end">
+      <ion-button id="changeText">
+        <ion-icon slot="start" name="refresh"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>
