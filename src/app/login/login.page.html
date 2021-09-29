@@ -24,24 +24,24 @@
     </ion-card-header>
 
     <ion-card-content>
-      <form>
+      <form [formGroup]="formularioLogin">
         <ion-item class="altura-item borde-input" color="dark">
           <ion-label position="floating">Usuario</ion-label>
-          <ion-input type="text" required="true"></ion-input>
+          <ion-input type="text" id="nombre" formControlName="nombre"></ion-input>
         </ion-item>
         <br>
 
         <ion-item class="altura-item borde-input" color="dark">
           <ion-label position="floating">Contraseña</ion-label>
-          <ion-input type="password" required="true"></ion-input>
+          <ion-input type="password" id="password" formControlName="password"></ion-input>
         </ion-item>
 
         <ion-item class="fondo" >
-          <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+          <ion-checkbox color="secondary" checked="false" slot="start"></ion-checkbox>
           <ion-label class="ion-text-wrap" color="light">Desea Mantener Sesion Iniciada</ion-label>
         </ion-item>
 
-        <ion-button button-type="button" onclick="MuestraMensajeCarga();" color="primary" expand="block">Iniciar Sesion</ion-button>
+        <ion-button (click)="ingresar();" color="primary" expand="block">Iniciar Sesion</ion-button>
 
         <ion-slide>
           <ion-item class="fondo">

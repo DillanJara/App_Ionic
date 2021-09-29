@@ -19,21 +19,21 @@
 </head>
 
 <body>
-
+  <!-- Animacion para codigo de Confirmacion de contraseña -->
   <script type="module">
     import { loadingController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
     window.loadingController = loadingController;
   </script>
   <script>
-    async function MuestraMensajeCarga() {
+    async function CargarCodigo() {
       const loading = await loadingController.create({
-        message: 'Cargando...',
-        duration: 1000
+        message: 'Enviando Codigo a su Correo',
+        duration: 3000
       });
-
+  
       await loading.present();
       const { role, data } = await loading.onDidDismiss();
-      window.location.href="/principal";
+      window.location.href="/codigo-verificar";
     }
   </script>
 
