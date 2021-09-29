@@ -5,33 +5,32 @@
 </ion-header>
 
 <ion-content fullscreen="true" color="dark">
-  <div>
-    <ion-card class="borde-contenedor fondo">
+  <ion-card class="borde-contenedor fondo">
 
-      <ion-slide>
-        <ion-row>
-          <ion-col>
-            <ion-avatar>
-              <img src="https://cdn-icons-png.flaticon.com/512/3427/3427189.png">
-            </ion-avatar>
-          </ion-col>
-        </ion-row>
-      </ion-slide>
+    <ion-slide>
+      <ion-row>
+        <ion-col>
+          <ion-avatar>
+            <img src="https://cdn-icons-png.flaticon.com/512/3427/3427189.png">
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
 
-      <ion-card-content>
-        <form>
-          <ion-item class="altura-item borde-input" color="dark">
-            <ion-label position="floating">Ingrese Correo de Verificacion</ion-label>
-            <ion-input type="email" required="true"></ion-input>
-          </ion-item>
-          <br>
-          <ion-button (click)="CargarCodigo();" color="primary" expand="block">Recuperar</ion-button>
-        </form>
+    <ion-card-content>
+      <form [formGroup]="formRecuperarContra">
+        <ion-item class="altura-item borde-input" color="dark">
+          <ion-label position="floating">Ingrese Correo de Verificacion</ion-label>
+          <ion-input type="email" id="correoRecuperacion" formControlName="correoRecuperacion"></ion-input>
+        </ion-item>
+        <br>
 
-      </ion-card-content>
+        <ion-button (click)="ingresarCorreo();" color="primary" expand="block">Recuperar</ion-button>
 
-    </ion-card>
-  </div>
+      </form>
+    </ion-card-content>
+
+  </ion-card>
 </ion-content> 
 
 <ion-footer class="borde-contenedor">

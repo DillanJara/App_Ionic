@@ -10,21 +10,21 @@
       <ion-slide>
         <ion-row>
           <ion-col>
-            <ion-avatar>
-              <img src="https://cdn-icons-png.flaticon.com/512/3427/3427189.png">
-            </ion-avatar>
+            <ion-thumbnail>
+              <img src="https://cdn-icons-png.flaticon.com/128/2194/2194629.png">
+            </ion-thumbnail>
           </ion-col>
         </ion-row>
       </ion-slide>
 
       <ion-card-content>
-        <form>
+        <form [formGroup]="formCodigo">
           <ion-item class="altura-item borde-input" color="dark">
             <ion-label position="floating">Ingrese Código</ion-label>
-            <ion-input type="text" required="true"></ion-input>
+            <ion-input type="text" id="codigo" formControlName="codigo"></ion-input>
           </ion-item>
           <br>
-          <ion-button button-type="button" href="/login" color="primary" expand="block">Confirmar</ion-button>
+          <ion-button (click)="ingresarCodigo();" color="primary" expand="block">Confirmar</ion-button>
         </form>
       </ion-card-content>
 

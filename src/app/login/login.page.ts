@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, LoadingController } from '@ionic/angular';
-
-import {
-  FormGroup, FormControl,
+import { FormGroup, FormControl,
   Validators, FormBuilder
 } from '@angular/forms';
-
-    
 
 @Component({
   selector: 'app-login',
@@ -17,10 +13,9 @@ import {
 export class LoginPage implements OnInit {
 
   formularioLogin: FormGroup;
-  
 
-
-  constructor(public fb: FormBuilder,
+  constructor(
+    public fb: FormBuilder,
     public alertController: AlertController, 
     public loadingCtrl: LoadingController) { 
 
@@ -47,7 +42,7 @@ export class LoginPage implements OnInit {
   async ingresar(){
     var f = this.formularioLogin.value;
 
-    if(this.formularioLogin.invalid){
+    if(this.formularioLogin.invalid) {
       const alert = await this.alertController.create({
         header: 'Datos incompletos',
         message: 'Tienes que llenar todos los datos',
@@ -57,7 +52,7 @@ export class LoginPage implements OnInit {
       await alert.present();
       return;
     }
-    else{
+    else {
       this.mensajeCarga();
     }
   }
