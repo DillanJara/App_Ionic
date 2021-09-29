@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  FormGroup,
-  FormControl,
-  Validators,
-  FormBuilder
-} from '@angular/forms';
 import { AlertController, LoadingController } from '@ionic/angular';
+
+import {
+  FormGroup, FormControl,
+  Validators, FormBuilder
+} from '@angular/forms';
+
     
 
 @Component({
@@ -33,7 +33,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  async MuestraMensajeCarga() {
+  async mensajeCarga() {
     const loading = await this.loadingCtrl.create({
       message: 'Cargando...',
       duration: 1000
@@ -58,7 +58,7 @@ export class LoginPage implements OnInit {
       return;
     }
     else{
-      this.MuestraMensajeCarga();
+      this.mensajeCarga();
     }
   }
 }
